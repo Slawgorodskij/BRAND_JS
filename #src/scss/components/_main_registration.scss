@@ -1,0 +1,138 @@
+.registration {
+  padding: 64px 15px 96px;
+}
+
+.registration-item__form {
+  grid-column: 4 span;
+  display: flex;
+  flex-direction: column;
+
+  &-name {
+    display: flex;
+    flex-direction: column;
+
+    &_title {
+      margin-bottom: 20px;
+      font-weight: 300;
+      font-size: 16px;
+    }
+
+    &_text {
+      margin-top: 0;
+      margin-bottom: 39px;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #b1b1b1;
+    }
+  }
+
+  &_input {
+    margin-bottom: 20px;
+    padding: 13px 17px 16px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #b1b1b1;
+    border: 1px solid #a4a4a4;
+  }
+
+  &-gender {
+    margin: 0 0 35px;
+    padding: 0;
+    border: none;
+
+    &_btn {
+      padding-left: 0;
+      margin-right: 20px;
+
+      &-last {
+        display: none;
+        margin-right: 0;
+
+        @include tablet {
+          display: inline-block;
+        }
+      }
+
+      &_text {
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 13px;
+        color: var(--color-black);
+      }
+
+    }
+  }
+}
+
+.registration-item__button {
+  padding: 16px 24px 17px 29px;
+  display: flex;
+  text-align: center;
+  background-color: var(--color-pink);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+
+  &_text {
+    margin-right: 20px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+
+  &_arrow {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-white);
+  }
+  &:hover{
+    background-color: var(--color-red);
+  }
+}
+
+.registration-item__slogan {
+  grid-column-start: 6;
+  grid-column-end: 13;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--color-black0);
+
+  @include tablet {
+    grid-column-start: 5;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @include mobile {
+    grid-column-start: 1;
+  }
+
+  &_title {
+    margin-bottom: 22px;
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+
+  &_text {
+    margin-bottom: 21px;
+  }
+
+  &-perk_li {
+    padding-left: 43px;
+    margin-bottom: 16px;
+    background-image: url('../images/vector.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+}

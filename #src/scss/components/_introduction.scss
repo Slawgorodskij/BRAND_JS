@@ -1,0 +1,30 @@
+.introduction {
+  padding-top: 72px;
+  background-color: #f8f3f4;
+  text-transform: uppercase;
+}
+.introduction__item {
+  padding: 60px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mobile {
+    padding: 0 15px;
+    height: 148px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+.introduction__title {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--color-pink);
+}
+.introduction__address {
+  font-weight: 300;
+  color: #636363;
+}
+.introduction__address_color {
+  font-weight: 700;
+  color: var(--color-pink);
+}
